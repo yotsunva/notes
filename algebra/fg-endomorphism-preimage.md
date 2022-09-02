@@ -1,6 +1,6 @@
 # 有限生成加群の自己準同型による逆像
 $A$ : 可換環， $M$ : 有限生成 $A$ 加群  
-$g : M\to M$, $N\leq M$  
+$g : M\to M$ , $N\leq M$  
 ## 定理1： $g^{-1}N\leq N$ なら $g^{-1}N=N$
 $g^{-1}N\leq N$ を仮定する。  
 $(N:N):=\lbrace f\in \mathrm{End} M : N\leq f^{-1}N\rbrace$ とおく。以下が成り立つ：
@@ -12,3 +12,9 @@ $M$ は有限生成なので $g\in\mathrm{End} M$ は $A$ 上整。よって $g\
 ## 系3： $f:M\to P$ に対して、 $fg$ が単射なら $f$ は単射
 ## 系4： $M\leq P$ が fgp submod. であるとき、 $f:M\to P$ が全射なら $f$ は同型
 ## 系5： $y_1,\ldots ,y_n\in P$ が線形独立であるとき、 $P$ が $x_1,\ldots ,x_n\in P$ で生成されるなら $x_i$ は $P$ の基底
+## 系6：系4において $M$ が射影的であるという仮定は不要
+$f:M\twoheadrightarrow P$ , $i:M\hookrightarrow P$ , $p:A^m\twoheadrightarrow M$  
+有限階数自由加群は射影的なので、 $fpg=ip$ となる $g:A^m\to A^m$ が存在する。  
+$g^{-1}p^{-1}f^{-1}0=p^{-1}i^{-1}0=p^{-1}0\leq p^{-1}f^{-1}0$ なので定理1より
+$p^{-1}0=p^{-1}f^{-1}0$ である。
+よって $f^{-1}0=0$ で、 $f$ は同型。
