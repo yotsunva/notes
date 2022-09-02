@@ -1,4 +1,5 @@
 # 有限生成加群の自己準同型による逆像
+[1] の下位互換。  
 $A$ : 可換環， $M$ : 有限生成 $A$ 加群  
 $g : M\to M$ , $N\leq M$  
 ## 定理1： $g^{-1}N\leq N$ なら $g^{-1}N=N$
@@ -23,6 +24,8 @@ $f:N\twoheadrightarrow M$ , $i:N\hookrightarrow M$ , $p:A^m\twoheadrightarrow M$
 $A^m$ の射影性より $fq=p$ を満たす $q:A^m\to N$ が存在する。  
 - $x\in \ker f$ を任意にとる。  
 $N':=Ax+qA^m\leq N$ は有限生成。 $fN'\geq fqA^m=pA^m=M$ なので $f|\_{N'}$ は全射。
-これと系6より $f|\_{N'}:N'\to M$ は同型で、 $x\in \ker f|\_{N'}=0$ である。
+系6より $f|\_{N'}:N'\to M$ は同型で、 $x\in \ker f|\_{N'}=0$ である。
 
 よって $\ker f=0$ で、 $f$ は同型。
+## 参考文献
+[1] Darij Grinberg, _A constructive proof of Orzech’s theorem_, 2016.
