@@ -9,3 +9,4 @@ $(N:N):=\lbrace g\in \mathrm{End} M : N\leq g^{-1}N\rbrace$ とおく。以下�
 
 $M$ は有限生成なので $f\in\mathrm{End} M$ は $A$ 上整。よって $f\in (N:N)$ である。
 ## 系2： $g:M\to P$ に対して、 $\ker gf\leq \ker g$ なら $\ker gf=\ker g$
+## 系3： $g:M\to P$ に対して、 $gf$ が単射なら $g$ は単射
