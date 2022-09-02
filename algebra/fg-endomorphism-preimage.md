@@ -8,7 +8,7 @@ $(N:N):=\lbrace f\in \mathrm{End} M : N\leq f^{-1}N\rbrace$ とおく。以下�
 - $a\in A$ に対して $f+a\in (N:N)\to f\in (N:N)$.
 - $gf\in (N:N)\to f\in (N:N)$.
 
-$M$ は有限生成なので $g\in\mathrm{End} M$ は $A$ 上整。よって $g\in (N:N)$ である。
+$M$ は有限生成なので $g\in\mathrm{End} M$ は $A$ 上整（Cayley-Hamilton）。よって $g\in (N:N)$ である。
 ## 系2： $f:M\to P$ に対して、 $\ker fg\leq \ker f$ なら $\ker fg=\ker f$
 ## 系3： $f:M\to P$ に対して、 $fg$ が単射なら $f$ は単射
 ## 系4： $M\leq P$ が fgp submod. であるとき、 $f:M\to P$ が全射なら $f$ は同型
