@@ -5,9 +5,8 @@ $g : M\to M$ , $N\leq M$
 ## 定理1： $g^{-1}N\leq N$ なら $g^{-1}N=N$
 $g^{-1}N\leq N$ を仮定する。  
 $(N:N):=\lbrace f\in \mathrm{End} M : N\leq f^{-1}N\rbrace$ とおく。以下が成り立つ：
-- $A\leq (N:N)$.
+- $a\in A\to a\in (N:N)$.
 - $f,g\in (N:N)\to f+g\in (N:N)$.
-- $a\in A$ に対して $f\in (N:N)\to af\in (N:N)$.
 - $gf\in (N:N)\to f\in (N:N)$.
 
 $M$ は有限生成なので $g\in\mathrm{End} M$ は $A$ 上整（Cayley-Hamilton）。よって $g\in (N:N)$ である。
