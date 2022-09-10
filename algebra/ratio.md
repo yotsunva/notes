@@ -7,4 +7,4 @@ $a,b,c,d\in A$
 
 これを $a:b=c:d$ のように表す。
 ## 定理： $a:b=c:d \to ad=bc$.
-## 定理： $a,c$ が正則なら $a:b=c:d \leftrightarrow ad=bc$.
+## 定理： $a,c\in \mathrm{Reg} A$ なら $a:b=c:d \leftrightarrow ad=bc$.
