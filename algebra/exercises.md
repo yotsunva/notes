@@ -1,2 +1,4 @@
 - $\phi : R[Z]\to R[X,Y]/(X^2-a, Y^2-b)$ , $\phi Z = X+Y$ が全射になる条件
-  - $2, a-b \in R^\times$
+  - $2(a-b) \in R^\times$
+- $\phi : R[Z]\to R[X,Y]/(X^3-a, Y^2-b)$ , $\phi Z = X+Y$ が全射になる条件
+  - $27a^2+64b^3 \in R^\times$ ?
