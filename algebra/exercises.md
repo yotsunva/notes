@@ -1,0 +1,2 @@
+- $\phi : R[Z]\to R[X,Y]/(X^2-a, Y^2-b)$ , $\phi Z = X+Y$ が全射になる条件
+  - $2, a-b \in R^\times$
