@@ -1,4 +1,6 @@
 - $\phi : R[Z]\to R[X,Y]/(X^2-a, Y^2-b)$ , $\phi Z = X+Y$ が全射になる条件
   - $2(a-b) \in R^\times$
 - $\phi : R[Z]\to R[X,Y]/(X^3-a, Y^2-b)$ , $\phi Z = X+Y$ が全射になる条件
-  - $27a^2+64b^3 \in R^\times$ ?
+  - $3^3a^2+2^6b^3 \in R^\times$ ?
+- $\phi : R[Z]\to R[X,Y]/(X^5-a, Y^2-b)$ , $\phi Z = X+Y$ が全射になる条件
+  - $5^5a^4+5^42^{10}a^2b^5+2^{20}b^{10} \in R^\times$ ?
