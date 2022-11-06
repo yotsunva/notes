@@ -20,7 +20,9 @@ $\wedge : \Lambda^k M \otimes \Lambda^l M\to\Lambda^{k+l} M$ , $(m_1\wedge\cdots
 ### $\wedge : \Lambda^k R^n\otimes \Lambda^{n-k}R^n \to \Lambda^n R^n$ は perfect
 $\lambda xy. x\wedge y:\Lambda^k R^n\to (\Lambda^{n-k}R^n \to \Lambda^n R^n)$ は同型。  
 つまり、任意の $\varphi:\Lambda^{n-k}R^n \to \Lambda^n R^n$ に対して
-$\sum_{f\in \binom nk}c_f(e_{f1}\wedge\cdots \wedge e_{fk})\in \Lambda^k R^n$ が $\varphi$ に写るような $c_f$ が一意に定まる。  
+$x_\varphi:=\sum_{f\in \binom nk}c_f(e_{f1}\wedge\cdots \wedge e_{fk})\in \Lambda^k R^n$ が $\varphi$ に写るような $c_f$ が一意に定まる。  
 具体的には $f$ の complement を $f'\in \binom n{n-k}$ として、
-$\varphi(e_{f'1}\wedge\cdots \wedge e_{f'(n-k)})=c_f(e_{f1}\wedge\cdots \wedge e_{fk}\wedge e_{f'1}\wedge\cdots \wedge e_{f'(n-k)})$ となるように定める。  
+$x_\varphi \wedge (e_{f'1}\wedge\cdots \wedge e_{f'(n-k)})=c_f(e_{f1}\wedge\cdots \wedge e_{fk}\wedge e_{f'1}\wedge\cdots \wedge e_{f'(n-k)})$
+が $\varphi(e_{f'1}\wedge\cdots \wedge e_{f'(n-k)})$
+と等しくなる必要があり、実際こうなるように $c_f$ を定めれば良い。  
 $\Vert V\simeq R^n\Vert$ のとき、 $\wedge : \Lambda^k V\otimes \Lambda^{n-k}V \to \Lambda^n V$ は perfect （この pairing は基底の取り方に依存しない）。
