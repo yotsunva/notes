@@ -19,7 +19,7 @@ dependent functor $F,G:(x:B)\to E(x,x)$ に対して、以下の組を $F,G$ 間
 $E$ が constant な場合は自然変換になるべきである。
 ### dependent functor category
 dependent functor category $(x:B)\to E(x,x)$ を以下のように定める：
-- 対象は dependent function $F:(x:B)\to E(x,x)$
+- 対象は dependent functor $F:(x:B)\to E(x,x)$
 - 対象 $F,G:(x:B)\to E(x,x)$ 間の射は natural transformation
 - id, 合成は自然に定める。
 
