@@ -36,6 +36,7 @@ $E$ が constant な場合は積圏になるべきである。
 関手 $F:B\to \mathsf{Cat}$ に対して $E(x,y):=F(y)$ とした場合は Grothendieck 構成になるべきである。
 ### sanity check
 - currying が機能するか。
+  - $((p:(x:B)\times E_1(x,x))\to E_2(p,p))\simeq((x:B)\to (a:E_1(x,x))\to E_2((x,a),(x,a)))$
   - 米田の証明に有用か。
 - transformation extensionality が成り立つか。
   - 関手 $F,G:B\to A$ に対する $\hom(F,G)\simeq ((x:B)\to \hom_A(F^\mathsf{op}x,Gx))$
