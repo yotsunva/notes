@@ -6,10 +6,10 @@ $A$ : 可換環、 $S\subseteq A$ : 積閉、 $I\subseteq A$ : イデアル
 $$ \begin{align}
 x/s\in S^{-1}I &\iff \exists i\in I.\ \exists t\in S.\ x/s=i/t\\
 &\iff \exists i\in I.\ \exists t,u\in S.\ utx=usi\\
-&\Rightarrow \exists v\in S.\ vx\in I \quad (v:=ut)
+&\implies \exists v\in S.\ vx\in I \quad (v:=ut)
 \end{align} $$
 
-である（ $\exists v\in S.\ vx\in I \Rightarrow x/s=vx/vs\in S^{-1}I$ なので逆も成り立つ）。 $S\cap I =\emptyset$ より $\forall n.\ v^n\notin I$ なので、 $I$ の準素性より $x\in I$ である。
+である（ $\exists v\in S.\ vx\in I \implies x/s=vx/vs\in S^{-1}I$ なので逆も成り立つ）。 $S\cap I =\emptyset$ より $\forall n.\ v^n\notin I$ なので、 $I$ の準素性より $x\in I$ である。
 ### 例
 - $A=\mathbb{Z}$ , $S=2^\mathbb{N}$ , $I=(2)$ のとき
   - $S\cap I =2^{\mathbb{N}+1}$
