@@ -8,7 +8,7 @@ $B:=A[f]\subseteq \mathrm{End}\ M$ とする。 $B$ は可換環で、 $M$ を $
 $IM=M$ なので中山より $\mathrm{id}_M\in I$.
 ### 例
 - $M=\bigoplus_{n\in\mathbb{N}}A$ とする（実はこれが有限生成になることは $A=0$ と同値）。
-  $e_n\mapsto e_{\mathsf{pred}(n)}:M\to M$ は全射で、これが同型になることは $A=0$ と同値。
+  $(e_0\mapsto 0\ ;\ e_{n+1}\mapsto e_n):M\to M$ は全射で、これが同型になることは $A=0$ と同値。
 - $A=\mathrm{End}\_{\mathbb{Z}\text{-mod}}(\bigoplus_{n\in\mathbb{N}}\mathbb{Z})$ （非可換）、 $M=A$ とする。
   $M$ は1元生成。
   $a:=(e_0\mapsto 0\ ;\ e_{n+1}\mapsto e_n)$ は右逆元 $e_n\mapsto e_{n+1}$ をもつので
