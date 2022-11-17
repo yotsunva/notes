@@ -3,6 +3,24 @@ $R$ : Heyting integral ring （つまり $(x\in\mathrm{Reg}\ R)'\to x=0$ を満�
 $S$ : 可換環、 $R\subseteq E$  
 $r_i\in R$ , $\alpha_i\in E$ （ $i=1,\ldots,n$）  
 準同型 $(X_i\mapsto \alpha_i)$ を単に $\varphi_n$ と表す。
+### 補題1 : $(\exists x\in \mathrm{Frac}\ R.\ r=x^2)'$ なら $R[X]/(X^2-r)$ は Heyting integral
+$(a+bX\in\mathrm{Reg}(R[X]/(X^2-r)))'$ を仮定する。
+- $b\in \mathrm{Reg}\ R$ を仮定する。
+  - $(a+bX)(c+dX)=_{R[X]/(X^2-r)}0$ とする。  
+    $(a+bX)(c+dX)\in (X^2-r)$ なので $(a+bX)(c+dX)=bd(X^2-r)$ である。
+    - $d\in \mathrm{Reg}\ R$ を仮定する。 $bd((-a/b)^2-r)=_{\mathrm{Frac}\ R}0$ なので $1=_R0$.
+    
+    よって $d=0$ , $c=0$
+    
+  よって $a+bX\in\mathrm{Reg}(R[X]/(X^2-r))$ , $1=_R0$.
+  
+よって $b=0$.
+- $a\in \mathrm{Reg}\ R$ を仮定する。
+  - $a(c+dX)=_{R[X]/(X^2-r)}0$ とすると $(c,d)=(0,0)$.
+    
+  よって $a\in\mathrm{Reg}(R[X]/(X^2-r))$ , $1=_R0$.
+
+よって $a=0$.
 ### 定理1 : $(\exists x\in \mathrm{Frac}\ R.\ r=x^2)'$ なら $\varphi:R[X]/(X^2-r)\to R[\alpha]$ は同型。このとき $R[\alpha]$ も Heyting integral.
 - $a,b\in R$ , $a+b\alpha=0$ とする。 $b^2r=_Ra^2$ である。
   - $b\in \mathrm{Reg}\ R$ を仮定する。 $r=(a/b)^2$ なので $1=_R0$
