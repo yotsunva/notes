@@ -43,13 +43,16 @@ $a+b\alpha=0$ , $b^2r=a^2$ , $r=(a/b)^2$.
 $r_i\in R$ , $\alpha_i\in E$ （ $i=1,\ldots,n$ ）  
 $R_k:=R[\alpha_1,\ldots,\alpha_k]$  
 $\varphi_k:R[X_i;i\leq k]/(X_i^2-r_i;i\leq k)\to R_k$ , $\varphi(X_i):= \alpha_i$
-<!--
-### 補題4 : $a,b\in R_{n-1}$ , $2ab\in \mathrm{Reg}\ R_{n-1}$ , $\varphi(a+bX_n)=0$ ならば $r_n=((a^2+b^2r_n)/(2ab))^2$.
-$a+b\alpha_n=0$ , $\alpha_n=-(a^2+b^2r_n)/(2ab)$ , $r_n=((a^2+b^2r_n)/(2ab))^2$.
-### 補題5 : $a,b\in R_{n-1}$ , $2ab\in \mathrm{Reg}\ R_{n-1}$ , $\varphi(a+bX_n)=0$ ならば $r_n=((a^2+b^2r_n)/(2ab))^2$.
--->
-### 定理2 : ある条件のもとで $\varphi_n:R[X_i;i]/(X_i^2-r_i;i)\to R[\alpha_i;i]$ が同型
+### 補題4 : $a,b,c\in R_{n-2}$ , $2bc\in \mathrm{Reg}\ R_{n-2}$ , $a\alpha_n=b+c\alpha_{n-1}$ ならば $r_{n-1}=((a^2r_n-b^2-c^2r_{n-1})/(2bc))^2$.
+$a^2r_n=b^2+c^2r_{n-1}+2bc\alpha_{n-1}$ , $r_{n-1}=((a^2r_n-b^2-c^2r_{n-1})/(2bc))^2$.
+### 補題5 : $a,b\in R_{n-2}$ , $a\in \mathrm{Reg}\ R_{n-2}$ , $a^2r_n=b^2$ ならば $r_n=(b/a)^2$.
+<!-- 2 reg を仮定。a,b が reg の場合に使う。このとき c=0。結局 b=0 に帰着。 -->
+### 補題6 : $a,c\in R_{n-2}$ , $a\in \mathrm{Reg}\ R_{n-2}$ , $a\alpha_n=c\alpha_{n-1}$ ならば $r_nr_{n-1}=(cr_{n-1}/a)^2$.
+<!-- 2 reg を仮定。a が reg の場合に使う。結局 a=0 に帰着。 -->
+### 定理7 : ある条件のもとで $\varphi_n:R[X_i;i]/(X_i^2-r_i;i)\to R[\alpha_i;i]$ が同型
 - ある条件とは、
+  - $2\in \mathrm{Reg}\ R$.
+  - $r_1,\ldots,r_n$ から1元以上選ぶと、どう選んでもそれらの積 $r$ について $(\exists x\in \mathrm{Frac}\ R.\ r=x^2)'$.
 
 帰納法で示す。 $R_k=R[\alpha_1,\ldots,\alpha_k]$ とおく。
 - $n=0$ のとき、成り立つ。
