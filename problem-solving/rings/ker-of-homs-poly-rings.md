@@ -18,3 +18,12 @@ $\varphi(Y^2-X^2Z)=0$ より $(Y^2-X^2Z)\subseteq\ker\varphi$.
   よって $f\in\ker\varphi$.
 
 よって $\ker\varphi\subseteq(Y^2-X^2Z)$.
+### 問3 : $\varphi:R[X,Y,Z]\to R[S,T]$ , $X,Y,Z\mapsto S^a,ST,T^a$ $(a\geq 1)$ の ker を求めよ。
+$\varphi(Y^a-XZ)=0$ より $(Y^a-XZ)\subseteq\ker\varphi$.  
+- $\varphi(f)=0$ とする。 $f=g(Y^a-XZ)+\sum_{k\leq a-1}h_kY^k$ $(h_k\in R[X,Z])$ と表す。  
+  $0=\varphi(f)=\sum_{k\leq a-1}\varphi(h_k)S^kT^k$ と $\varphi(R[X,Z])\subseteq \bigoplus_n (R[S])T^{an}$ より
+  $h_k\in\ker\varphi$.  
+  $\varphi|_{R[X,Z]}:R[X,Z]\to R[S,T]$ , $X,Z\mapsto S^a,T^a$ は単射なので $h_k=0$.  
+  よって $f\in\ker\varphi$.
+
+よって $\ker\varphi\subseteq(Y^a-XZ)$.
