@@ -14,7 +14,7 @@ $[K(\sqrt r,\sqrt s):K(\sqrt r)]=1,2$ , $[K(\sqrt r):K]=1,2$ なので、 $1,2,4
   
   結局 $[K(\sqrt r,\sqrt s):K]=4\iff\sqrt r,\sqrt s,\sqrt{rs}\notin K\land(2\neq 0\lor\neg(\exists a,b.\ s=a^2+b^2r))$
 - $[K(\sqrt r,\sqrt s):K]=2$ となるのは以下のいずれかが成り立つ場合：
-  - $\sqrt r,\sqrt s,\sqrt{rs}$ のうち $K$ に属するものが1つだけのとき。
+  - $\sqrt r,\sqrt s$ のうち $K$ に属するものが1つだけのとき。
   - $\sqrt r,\sqrt s,\sqrt{rs}\notin K\land 2=0\land\exists a,b.\ s=a^2+b^2r$
 #### 例
 - $K=\mathbb{F}_2(T)$ なら、 $[K(\sqrt{T},\sqrt{T+1}):K]=2$.
