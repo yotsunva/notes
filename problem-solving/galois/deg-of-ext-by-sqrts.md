@@ -10,7 +10,7 @@ $[K(\sqrt r,\sqrt s):K(\sqrt r)]=1,2$ , $[K(\sqrt r):K]=1,2$ なので、 $1,2,4
     $\sqrt s\in K(\sqrt r)\iff \exists a,b\in K.\ s=a^2+b^2r+2ab\sqrt r$ で、これが成り立つのは以下のいずれかが成り立つ場合：
     - $a=0$ , $s=b^2r$ （つまり $\sqrt{rs}\in K$ ）
     - $b=0$ , $s=a^2$ （つまり $\sqrt s\in K$ ）
-    - $2\neq 0$ , $s=a^2+b^2r$ （つまり $2=0\land\exists a,b\in K.\ s=a^2+b^2r$ ）
+    - $2=0$ , $s=a^2+b^2r$ （つまり $2=0\land\exists a,b\in K.\ s=a^2+b^2r$ ）
   
   結局 $[K(\sqrt r,\sqrt s):K]=4\iff\sqrt r,\sqrt s,\sqrt{rs}\notin K\land(2\neq 0\lor\neg(\exists a,b.\ s=a^2+b^2r))$
 - $[K(\sqrt r,\sqrt s):K]=2$ となるのは以下のいずれかが成り立つ場合：
@@ -31,3 +31,11 @@ $[K_n:K]=2^n \implies \forall I\in\mathcal{P}\_{\neq \emptyset}([n]).\ \sqrt{\pr
       - $[K_{n-2}(\sqrt{r_{n-1} r_n}):K]=2^{n-2}$.
     
     よって $\sqrt {r_{n-1}},\sqrt {r_n},\sqrt{r_{n-1}r_n}\notin K_{n-2}$ で $[K_n:K]=2^n$.
+### 問4 : $[\mathbb Q(\alpha,\beta),\mathbb Q]$ $(\alpha,\beta):=(\sqrt{5+\sqrt 7},\sqrt{5-\sqrt 7})$ を求めよ。
+$X^4-10X^2+18\in \mathbb Q[X]$ は既約なのでこれは $\alpha,\beta$ の最小多項式。よって $[\mathbb Q(\alpha):\mathbb Q]=4$ , $[\mathbb Q(\beta):\mathbb Q]=4$.  
+$\alpha^2-5=\sqrt 7$ より $\sqrt 7\in\mathbb Q(\alpha)$.  
+$[\mathbb Q(\sqrt 7)(\alpha,\beta):\mathbb Q(\sqrt 7)]$ を求める。
+- 最初の次数の議論より $\alpha,\beta\notin\mathbb Q(\sqrt 7)$ である。
+- $\sqrt{(5+\sqrt 7)(5-\sqrt 7)}=\sqrt{18}\notin\mathbb Q(\sqrt 7)$ である（ $[\mathbb Q(\sqrt 7,\sqrt{18}):\mathbb Q]=4$ だから）。
+
+よって $[\mathbb Q(\sqrt 7)(\alpha,\beta):\mathbb Q(\sqrt 7)]=4$ で、 $[\mathbb Q(\alpha,\beta),\mathbb Q]=8$.
