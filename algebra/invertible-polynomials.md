@@ -1,7 +1,7 @@
 ## 可逆な多項式
 $R$ : 可換環
 ### 定理1 : $f\in R[X]^\times$ ならば $\overline f\in (R/\sqrt0)[X]$ は定数
-「 $f\in (R/\sqrt0)[X]^\times$ ならば $\overline f\in (R/\sqrt0)[X]$ は定数」を示せば良い。  
+「 $f\in (R/\sqrt0)[X]^\times$ ならば $f\in (R/\sqrt0)[X]$ は定数」を示せば良い。  
 「 $R$ が被約、 $f\in R[X]^\times$ ならば $f$ は定数」を示せば良い。  
 $fg=1$ とする。 $g(0)\in R^\times$ である。  
 $n\geq 1$ に対して $(\deg f\leq n\implies\deg f\leq n-1)$ を示せば良い。  
@@ -12,6 +12,6 @@ $\deg f\leq n$ とする。 $f$ の $n$ 次の係数を $a_n$ とおく。
   $a_n^{i+1}b_m=0$.  
   よって $\deg a_n^{i+1}g\leq m-1$.
   
-よって $a_n^{\deg g+1}g=0$ である。
+$\deg a_n^0g\leq \deg g$ なので帰納的に $a_n^{\deg g+1}g=0$ である。
 両辺の定数項を比較すると $a_n^{\deg g+1}g(0)=0$ である。 $g(0)\in R^\times$ と $R$ の被約性より $a_n=0$.  
 よって $\deg f\leq n-1$.
