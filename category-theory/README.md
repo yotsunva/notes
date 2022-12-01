@@ -3,7 +3,7 @@
 - Product category
 - Functor category
 ### 基本的な概念の定義
-- [Heterogeneous path](heterogeneous-paths)
+- [Heterogeneous morphism](heterogeneous-morphisms.md)
 - Σ-category
 - Dependent functor
 - Π-category
