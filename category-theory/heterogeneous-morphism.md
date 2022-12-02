@@ -1,4 +1,4 @@
-## Heterogeneous morphisms
+## Heterogeneous morphism
 $B$ : （局所小）圏、 $E:B^\mathsf{op}\times B\to \mathsf{Cat}$ : 関手（pseudofunctor とかに緩めたほうが良い場面もあるかも）
 ### 定義
 $x,y:B$ , $a:E(x,x)$ , $b:E(y,y)$ , $f:x\to_B y$ に対し、
