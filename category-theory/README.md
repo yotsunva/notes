@@ -3,12 +3,13 @@
 - Product category
 - Functor category
 ### 基本的な概念の定義
-- [Heterogeneous morphism](heterogeneous-morphisms.md)
-- Σ-category
-- Dependent functor
+- [Heterogeneous morphism](heterogeneous-morphism.md)
+- [Σ-category](Σ-category.md)
+- [Dependent functor](dependent-functor.md)
+- [Natural transformation](natural-transformation.md)
+  - Transformation extensionality
 - Π-category
 ### 基本的な性質
-- Transformation extensionality
 - Currying
 - Yoneda
 - Comma category
