@@ -5,8 +5,8 @@ $$
 \begin{align}
 (n,h)\in Z(N\rtimes_\varphi H)
 &\iff \forall x,y.\ {}^{(1,y)}(n,h)=(n,h)\land {}^{(x,1)}(n,h)=(n,h)\\
-&\iff \forall x,y.\ (\varphi_yn,h)=(n,h)\land (xn(\varphi_hx^{-1}),h)=(n,h)\\
-&\iff \forall x,y.\ \varphi_yn=n\land xn(\varphi_hx^{-1})=n
+&\iff \forall x,y.\ (\varphi_yn,{}^yh)=(n,h)\land (xn(\varphi_hx^{-1}),h)=(n,{}^yh)\\
+&\iff (h\in Z(H))\land (\forall y.\ \varphi_yn=n)\land (\forall x.\ xn(\varphi_hx^{-1})=n)
 \end{align}
 $$
 
