@@ -100,6 +100,7 @@ PB を示しましょう。 $r$ によって $A$ に写るような $x$ の有�
 $p:X\to 2$ を
 - $rx\in A$ なら $px=0$
 - $rx\in X$ なら $px=1$
+
 と定めます。LPO $X$ より $\exists x.\ px=0\lor\neg(\exists x.\ px=0)$ が成り立ちます。
 - $\exists x.\ px=0$ なら、その $x$ について $rx\in A$ なので $A$ は決定可能
 - $\neg\exists x.\ px=0$ とする。
