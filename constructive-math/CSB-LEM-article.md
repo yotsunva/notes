@@ -1,4 +1,7 @@
 # ベルンシュタインの定理 (CSB) と排中律 (LEM)
+これは Mathematical Logic Advent Calendar 2022 の16日目の記事です。  
+https://adventar.org/calendars/7465
+
 主に以下のような話題について述べます。
 - CSB に関する事実
 - searchable な無限集合
@@ -16,7 +19,7 @@ CSB とは、「任意の集合 $X,Y$ について、二つの単射 $f:X\to Y$ 
 
 LEM から CSB が従うことが知られています。
 
-univalent foundations (UF) において、集合とは限らない任意の型に対して CSB を拡張できて、こちらも UF における LEM から従うことが知られています。
+Univalent foundations (UF) において、集合とは限らない任意の型に対して CSB を拡張できて、こちらも UF における LEM から従うことが知られています。
 - Martín Hötzel Escardó: The Cantor-Schröder-Bernstein Theorem for ∞-groupoids  
   https://arxiv.org/abs/2002.07079
 ## searchable な無限集合
