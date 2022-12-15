@@ -9,6 +9,8 @@
   - Pierre Pradic, Chad E. Brown: Cantor-Bernstein implies Excluded Middle  
     https://arxiv.org/abs/1904.09193  
     の一部
+#### 注意書き
+- 厳密性を欠く記述が含まれる可能性がありますが、非自明な行間はそこそこ減らしたつもりです。
 ## CSB に関する事実
 CSB とは、「任意の集合 $X,Y$ について、二つの単射 $f:X\to Y$ , $g:Y\to X$ が存在するなら全単射 $h:X\to Y$ が存在する」という命題のことです。
 
@@ -19,7 +21,7 @@ univalent foundations (UF) において、集合とは限らない任意の型�
   https://arxiv.org/abs/2002.07079
 ## searchable な無限集合
 この節では一見本題とは関係ない話をします。実際、本題と切り離しても有意義な話です。
-### LPO
+### Limited principle of omniscience (LPO)
 LPO とは、「任意の関数 $p:\mathbb N\to 2$ について、 $\exists n.\ pn=0\lor\neg(\exists n.\ pn=0)$」という命題のことです。
 $pn=0$ をみたす $n$ を $p$ の根と呼ぶことにすると、LPO は「 $p$ の根が $\mathbb N$ の中にあるかどうかを判定できる」のように解釈することができます。
 
@@ -49,10 +51,10 @@ $\mathbb N_\infty$ と $\mathbb N$ の間に全単射が存在することは LP
 単射 $(-)':\mathbb N\to \mathbb N_\infty$ を $n':=1^n0^\omega$ と定めます。 $n'$ は最初の $n$ 個が1であるような列です。
 $\infty:=11111\ldots$ と定めます。
 
-$\mathbb N_\infty=\mathbb N\cup\lbrace\infty\rbrace$ は LPO と同値です。これは構成的には示せませんが、
-「 $n',\infty$ 以外の元が存在する」ということではありません。
+$\mathbb N_\infty=\mathbb N\cup\lbrace\infty\rbrace$ は LPO と同値で、構成的には示せませんが、
+「 $n',\infty$ 以外の元が存在するかもしれない」ということではありません。
 「適当に渡された元が $1111\ldots$ のような形だと、いつか0が出るのかどうかが有限桁を見るだけではわからない」という解釈があり得ます。
-### "その $a$" （ $pa=1\to\forall x\in X.\ px=1$ をみたす $a$ ）
+### "その $a$" （ $pa=1\to\forall x\in \mathbb N_\infty.\ px=1$ をみたす $a$ ）
 $p:\mathbb N_\infty\to 2$ に対して、 $a\in \mathbb N_\infty$ を $a(n):=\min\lbrace px:x\leq n'\rbrace$ と定めます。
 $p':=p \circ (-)'\in 2^{\mathbb N}$ を数列とみなすと、 $a$ は「 $p'$ について、最初から数えて1が何回連続で出るか」を表していると解釈できます。
 例えば $p'=110100\ldots$ なら $a=2'$ 、 $p'=\infty$ なら $a=\infty$ となります。
@@ -71,7 +73,7 @@ LEM を認めれば、この $a$ が "その $a$" であることがわかりま
 $a$ が "その $a$" であることを示しましょう。 $pa=1$ を仮定します。
 - $a$ が有限だと仮定すると $pa=0$ なので矛盾。
 
-よって $a$ は有限でなく、 $a=\infty$ です。よって $p'=\infty$ なので、 $p$ が $\mathbb N\cup\lbrace\infty\rbrace$ 上1であることがわかりました。
+よって $a$ は有限でなく、 $a=\infty$ です。よって $p'=\infty$ なので、 $p$ が $\mathbb N\cup\lbrace\infty\rbrace$ 上1であることがわかりました（次の subsection に続く）。
 ### トリック2： $p$ が $\mathbb N\cup\lbrace\infty\rbrace$ 上1なら全域で1
 $p$ はほぼ1であることがわかりました。
 
@@ -81,5 +83,40 @@ $x\in \mathbb N_\infty$ とします。
 よって $px=1$ です。
 
 以上で DP $\mathbb N_\infty$ が示されました。
-### CSB から LEM が従うこと
-本題に戻ります。
+## CSB から LEM が従うこと
+本題に戻ります。 $P$ を命題とします。CSB を仮定して $P\lor \neg P$ を示すのが目標です。
+
+まず $P$ から一元集合の部分集合 $\lbrace x\in 1:P\rbrace$ が作れます。この集合も $P$ と呼ぶことにします。
+集合 $X$ について「 $X$ が元をもつ、または $X$ が空」であるとき、 $X$ は決定可能であるということにします。
+$P\lor \neg P$ は $P$ が決定可能であることと同値です。
+### Pradic-Brown lemma (PB)
+PB の主張は
+「LPO $X$ が成り立つとする。
+$r:X\to A+X$ が $s:A+X\to X$ のレトラクション（つまり $rs=1$ ）なら
+$A$ は決定可能」というものです（ $+$ は集合の disjoint union）。
+
+PB を示しましょう。 $r$ によって $A$ に写るような $x$ の有無が重要です。
+
+$p:X\to 2$ を
+- $rx\in A$ なら $px=0$
+- $rx\in X$ なら $px=1$
+と定めます。LPO $X$ より $\exists x.\ px=0\lor\neg(\exists x.\ px=0)$ が成り立ちます。
+- $\exists x.\ px=0$ なら、その $x$ について $rx\in A$ なので $A$ は決定可能
+- $\neg\exists x.\ px=0$ とする。
+  - $A$ が元 $a$ をもつと仮定すると、 $rsa=a\in A$ なので $psa=0$ となり矛盾。
+  
+  よって $A$ は空で、決定可能。
+  
+よって PB が示されました。
+### CSB → LEM
+CSB を仮定します。
+二つの単射 $f:\mathbb N_\infty\to P+ \mathbb N_\infty$ , $g:P+\mathbb N_\infty\to \mathbb N_\infty$ が作れます。
+後者については
+- $a\in P$ に対して $ga:=0'$
+- $x\in \mathbb N_\infty$ に対して $gx:=(x\text{ の先頭に1を挿入})$
+
+と定めれば良いです。
+これと CSB より全単射 $\mathbb N_\infty\to P+ \mathbb N_\infty$ が存在します。
+LPO $\mathbb N_\infty$ も成り立つので PB より $P$ は決定可能です。
+
+   
