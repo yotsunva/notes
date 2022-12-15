@@ -58,7 +58,7 @@ $\mathbb N_\infty=\mathbb N\cup\lbrace\infty\rbrace$ は LPO と同値で、構�
 「 $n',\infty$ 以外の元が存在するかもしれない」ということではありません。
 「適当に渡された元が $1111\ldots$ のような形だと、いつか0が出るのかどうかが有限桁を見るだけではわからない」という解釈があり得ます。
 ### "その $a$" （ $pa=1\to\forall x\in \mathbb N_\infty.\ px=1$ をみたす $a$ ）
-$p:\mathbb N_\infty\to 2$ に対して、 $a\in \mathbb N_\infty$ を $a(n):=\min\lbrace px:x\leq n'\rbrace$ と定めます。
+$p:\mathbb N_\infty\to 2$ に対して、 $a\in \mathbb N_\infty$ を $a(m):=\min\lbrace pn':n\leq m\rbrace$ と定めます。
 $p':=p \circ (-)'\in 2^{\mathbb N}$ を数列とみなすと、 $a$ は「 $p'$ について、最初から数えて1が何回連続で出るか」を表していると解釈できます。
 例えば $p'=110100\ldots$ なら $a=2'$ 、 $p'=\infty$ なら $a=\infty$ となります。
 
