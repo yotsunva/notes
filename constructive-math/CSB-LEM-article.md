@@ -86,7 +86,7 @@ $x\in \mathbb N_\infty$ とします。
 
 よって $px=1$ です。
 
-以上で DP $\mathbb N_\infty$ が示されました。
+以上で DP $\mathbb N_\infty$ と LPO $\mathbb N_\infty$ が示されました。
 ## CSB から LEM が従うこと
 本題に戻ります。 $P$ を命題とします。CSB を仮定して $P\lor \neg P$ を示すのが目標です。
 
