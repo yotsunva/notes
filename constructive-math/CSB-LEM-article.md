@@ -96,22 +96,18 @@ $P\lor \neg P$ は $P$ が決定可能であることと同値です。
 ### Pradic-Brown lemma (PB)
 PB の主張は
 「LPO $X$ が成り立つとする。
-$r:X\to A+X$ が $s:A+X\to X$ のレトラクション（つまり $rs=1$ ）なら
+全射 $r:X\to A+B$ があれば
 $A$ は決定可能」というものです（ $+$ は集合の disjoint union）。
 
-PB を示しましょう。 $r$ によって $A$ に写るような $x$ の有無が重要です。
+PB を示しましょう。 $A$ が元をもつことは $\exists x.\ rx\in A$ と同値です。
 
 $p:X\to 2$ を
 - $rx\in A$ なら $px=0$
-- $rx\in X$ なら $px=1$
+- $rx\in B$ なら $px=1$
 
 と定めます。LPO $X$ より $\exists x.\ px=0\lor\neg(\exists x.\ px=0)$ が成り立ちます。
-- $\exists x.\ px=0$ なら、その $x$ について $rx\in A$ なので $A$ は決定可能
-- $\neg\exists x.\ px=0$ とする。
-  - $A$ が元 $a$ をもつと仮定すると、 $rsa=a\in A$ なので $psa=0$ となり矛盾。
-  
-  よって $A$ は空で、決定可能。
-  
+よって $A$ は決定可能です。
+
 よって PB が示されました。
 ### CSB → LEM
 CSB を仮定します。
@@ -123,5 +119,3 @@ CSB を仮定します。
 と定めれば良いです。
 これと CSB より全単射 $\mathbb N_\infty\to P+ \mathbb N_\infty$ が存在します。
 LPO $\mathbb N_\infty$ も成り立つので PB より $P$ は決定可能です。
-
-   
