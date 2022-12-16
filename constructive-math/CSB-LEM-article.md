@@ -1,5 +1,5 @@
 # ベルンシュタインの定理 (CSB) と排中律 (LEM)
-これは Mathematical Logic Advent Calendar 2022 の16日目の記事です。  
+これは Mathematical Logic Advent Calendar 2022 の15日目の記事です。  
 https://adventar.org/calendars/7465
 
 主に以下のような話題について述べます。
