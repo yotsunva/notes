@@ -105,7 +105,7 @@ $p:X\to 2$ を
 - $rx\in A$ のとき $px=0$
 - $rx\in B$ のとき $px=1$
 
-と定めると $rx\in A$ と $px=0$ が同値になります。LPO $X$ より $\exists x.\ px=0\lor\neg(\exists x.\ px=0)$ が成り立つので $A$ は決定可能です。
+と定めると $rx\in A$ と $px=0$ が同値になります。LPO $X$ より $\exists x.\ px=0\lor\neg(\exists x.\ px=0)$ が成り立つので $A$ は決定可能です。（「任意の $x\in X$ に対して命題 $rx\in A$ が決定可能なので、LPO $X$ より存在量化した $\exists x.\ rx\in A$ も決定可能」と言っても良いです。）
 
 よって PB が示されました。
 ### CSB → LEM
