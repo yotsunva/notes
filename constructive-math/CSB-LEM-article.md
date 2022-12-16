@@ -102,8 +102,8 @@ $A$ は決定可能」というものです（ $+$ は集合の disjoint union�
 PB を示しましょう。 $A$ が元をもつことは $\exists x.\ rx\in A$ と同値です。
 
 $p:X\to 2$ を
-- $rx\in A$ なら $px=0$
-- $rx\in B$ なら $px=1$
+- $rx\in A$ のとき $px=0$
+- $rx\in B$ のとき $px=1$
 
 と定めます。LPO $X$ より $\exists x.\ px=0\lor\neg(\exists x.\ px=0)$ が成り立ちます。
 よって $A$ は決定可能です。
